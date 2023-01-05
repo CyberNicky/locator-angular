@@ -1,0 +1,21 @@
+.container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #054654;
+}
+
+.right{
+    background-color: #00CA90;
+    
+}
+
+app-google-maps{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    
+}

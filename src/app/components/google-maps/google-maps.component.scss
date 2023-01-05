@@ -1,0 +1,70 @@
+.container{
+    background-color: #f5eeee;
+    border-radius: 5px;
+    padding: 15px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    h3{
+        color: rgb(2, 2, 2);
+    }
+}
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.button:active{
+    position: relative;
+    top: 1px;
+    
+
+}
+.button:hover{
+opacity: 0.8;
+
+transition: .2s;
+    
+
+}
+
+.primary-actions-container{
+    display: flex;
+    gap: 10px;
+}
+
+.button{
+    background-color: #1d9942; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.btn-secondary{
+    background-color: #3335da; 
+}
+
+.btn-three{
+    background-color: #c41414; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}

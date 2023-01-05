@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="header">
+    <h3>Place Finder 📌</h3>
+  </div>
+  <div class="container-google">
+
+  <google-map
+    height="500px"
+    width="100%"
+    [zoom]="zoom"
+    [center]="center"
+    [options]="options"
+  >
+    <map-marker
+      *ngFor="let marker of markers"
+      [position]="marker.position"
+      [label]="marker.label"
+      [title]="marker.title"
+      [options]="marker.options"
+      (mapClick)="openInfo(marker, marker.info)"
+    >
+      <map-info-window>{{ infoContent }}</map-info-window>
+    </map-marker></google-map
+  >
+  
+
+  <div class="button-container">
+    <div class="primary-actions-container">
+      <button class="button" (click)="zoomIn()">Zoom in</button>
+      <button class="button btn-secondary" (click)="zoomOut()">Zoom out</button>
+    </div>
+
+    <button class="button btn-three" (click)="addMarker()">Add marker</button>
+  </div>
+</div>
